@@ -5,30 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration Form</title>
 	<link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
    <script defer src="./dist/index.js"></script>
 </head>
 <body>
 
-   
 <div class="wrapper">
     <div class="logo">
         <img src="./assets/devrev-logo.png" alt="logo">
         <h1>DevRev</h1>
     </div>
-    <!-- <div class="title">
-       <h2>Register Now</h2>
-    </div> -->
     <form action="/" name="registrationForm" id="regform" class="form" method="get">
        <div class="inputfield">
-          <label>First Name</label>
+          <label>First Name
+          </label>
+          <span class="material-icons-sharp" id="fname-err">
+            error
+        </span>
           <input type="text" name="fname" class="input" required>
        </div>  
         <div class="inputfield">
           <label>Last Name</label>
+          <span class="material-icons-sharp" id="lname-err">
+            error
+        </span>
           <input type="text" name="lname" class="input" required>
        </div>  
        <div class="inputfield">
           <label>Email Address</label>
+          <span class="material-icons-sharp" id="email-err">
+            error
+        </span>
           <input type="email" name="email" class="input" required>
        </div> 
        <div class="inputfield">
@@ -37,6 +45,9 @@
      </div> 
      <div class="inputfield">
         <label>Confirm Password</label>
+        <span class="material-icons-sharp" id="cpwd-err">
+         error
+     </span>
         <input type="password" name="cpwd" class="input" required>
      </div>  
         <div class="inputfield">
@@ -53,14 +64,15 @@
        
       <div class="inputfield">
           <label>Phone Number</label>
+          <span class="material-icons-sharp" id="phone-err">
+            error
+        </span>
           <input type="text" class="input" name="phone" required>
        </div> 
       <div class="inputfield">
           <label>Address</label>
           <textarea class="textarea" name="address"></textarea>
        </div> 
-       <div id="verdict">
-      </div>
        <div class="actions">
         <div class="cancel" >
             <input type="submit" value="Cancel" id="cancel" class="btn">
@@ -74,8 +86,6 @@
 
 </div>	
 
- <!-- <div class="back-circle">
-      
-</div> -->
+
 </body>
 </html>
