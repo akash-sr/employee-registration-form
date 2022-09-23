@@ -23,8 +23,11 @@ form.onsubmit = (ev:SubmitEvent) => {
             "Gender:", gender, 
             "Phone:", phone,
             "Address:", address);
-
+            form.classList.remove("error");
             form.reset()
+        }
+        else{
+            form.classList.add("error");
         } 
     }
     else{
